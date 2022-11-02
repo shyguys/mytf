@@ -85,9 +85,7 @@ tf_clear() {
 
     find "${DIRECTORY}" \
       -type "f" \
-      \( -name ".terraform.lock.hcl" -o \
-        -name "terraform.tfstate" -o \
-        -name "terraform.tfstate.backup" \) \
+      \( -name ".terraform.lock.hcl" -o -name "terraform.tfstate" -o -name "terraform.tfstate.backup" \) \
       -exec echo "${SCRIPT_NAME}: removing '{}' ..." \; \
       -delete
   done
