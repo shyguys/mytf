@@ -1,0 +1,24 @@
+= mytf
+:toc: auto
+
+== Script Details
+
+This bash script is a Terraform wrapper to simplify commonly used commands.
+
+== Usage
+
+Type `mytf --help` for detailed information on how to use this script.
+
+== Environment Variables
+
+This script expects the following environment variables to be configured:
+
+[cols="a,a",options="header,autowidth"]
+|===
+|Name |Description
+|BASH_FUNCTION_LIBRARY_SCRIPTS_DIR |The local directory containing the
+https://github.com/shyguys/bash-function-library/tree/main/scripts[bash-function-library scripts].
+
+.The following scripts are required:
+* log.sh
+|===
