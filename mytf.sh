@@ -167,6 +167,7 @@ tf_validate() {
     case "${1}" in
       "--clear")
         CLEAR=1
+        shift 1
       ;;
 
       "--help")
